@@ -1,0 +1,20 @@
+public class jis {
+        public static void main(String[]args) {
+        	Car c=new Car();
+        	c.drive();//Repairing a car
+        	Vehicle v=new Vehicle();
+        	v.drive();//Repairing a vehicle
+        }
+}
+class Vehicle{
+	public void drive(){
+	System.out.println("Repairing a Vehicle");
+	}
+}
+class Car extends Vehicle{
+	@Override
+	public void drive() {
+	System.out.println("Repairing a car");
+}
+}
+	
