@@ -1,0 +1,22 @@
+package Javaprg;
+
+import java.util.StringTokenizer;
+
+public class OddEven {
+
+	public static void main(String[] args) {
+		int oddeven,oddcount=0,evencount=0;
+		 StringTokenizer string=new  StringTokenizer("2 6 5 8  1");
+		 while( string.hasMoreTokens()) {
+			 int no=Integer.parseInt( string.nextToken());
+			 if(no%2==0) {
+				 evencount++;
+			 }
+			 else {
+				 oddcount++;
+			 }
+		 }
+		 System.out.println(oddcount);
+		 System.out.println( evencount);
+		 
+	}}
