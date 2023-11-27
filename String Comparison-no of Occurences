@@ -1,0 +1,35 @@
+package first;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+public class string {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string");
+		String Line=sc.nextLine();
+		StringTokenizer input=new StringTokenizer(Line);
+		System.out.println("Enter word to check occurence");
+		String word=sc.next();
+		int noOfOcccurences=0;
+		while(input.hasMoreTokens()) {
+			if(word.equals(input.nextToken())) {
+				noOfOcccurences++;
+			}
+		}
+		if(noOfOcccurences>0) {
+			System.out.println("The word is found "+noOfOcccurences+" times");
+		}
+		else {
+			System.out.println("Word is not present");
+		}
+
+	}
+
+}
+output:
+Enter the string
+This is is deer
+Enter word to check occurence
+is
+The word is found 2 times
+
