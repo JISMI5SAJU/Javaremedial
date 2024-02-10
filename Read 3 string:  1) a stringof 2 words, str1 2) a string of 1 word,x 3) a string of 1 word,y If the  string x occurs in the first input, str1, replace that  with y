@@ -1,0 +1,35 @@
+package HelloWorld;
+import java.util.Scanner;
+
+public class repl {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read inputs
+        System.out.print("Enter a string of 2 words (str1): ");
+        String str1 = scanner.nextLine();
+
+        System.out.print("Enter a string of 1 word (x): ");
+        String x = scanner.next();
+
+        System.out.print("Enter a string of 1 word (y): ");
+        String y = scanner.next();
+
+        // Perform replacement
+        String result = str1.replace(x, y);
+
+        // Output the result
+        System.out.println("Result after replacement: " + result);
+
+        scanner.close();
+    }
+}
+output:
+[1:49 pm, 10/02/2024] Jismi: Enter a string of 2 words (str1): Hello world
+Enter a string of 1 word (x): Hello
+Enter a string of 1 word (y): Hi
+Result after replacement: Hi world
+Enter a string of 2 words (str1): How are you
+Enter a string of 1 word (x): are
+Enter a string of 1 word (y): am
+Result after replacement: How am you
