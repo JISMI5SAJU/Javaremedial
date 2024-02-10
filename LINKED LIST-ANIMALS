@@ -1,0 +1,28 @@
+package HelloWorld;
+import java.util.ArrayList;
+import java.util.List;
+public class LL {
+public static void main (String[]args) {
+  ArrayList<String>languages=new ArrayList<>();
+  languages.add("hindi");
+  languages.add("tamil");
+  languages.add("mala");
+  System.out.println("The languages:"+languages);
+ languages.add(0,"telungu");
+ System.out.println("The new languages:"+languages);
+ languages.add(1,"kannada");
+ System.out.println("The new2 languages:"+languages);
+ String ind=languages.get(2);
+ System.out.println("accessed language:"+ind);
+ String replace=languages.set(0, "marathi");
+ System.out.println("the replaced element:"+replace);
+ System.out.println("the replaced element:"+languages);
+ 
+}}
+OUTPUT:
+The languages:[hindi, tamil, mala]
+The new languages:[telungu, hindi, tamil, mala]
+The new2 languages:[telungu, kannada, hindi, tamil, mala]
+accessed language:hindi
+the replaced element:telungu
+the replaced element:[marathi, kannada, hindi, tamil, mala]
