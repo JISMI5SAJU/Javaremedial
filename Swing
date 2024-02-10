@@ -1,0 +1,19 @@
+package HelloWorld;
+import javax.swing.*;
+public class swing {
+
+	public static void main(String[] args) {
+		JFrame f=new JFrame("Simple swing");
+		JButton b=new JButton("Get info");
+		JButton c=new JButton("Submit");
+		b.setBounds(0,0,100,50);
+		c.setBounds(190,200, 0, 0);
+		f.add(b);
+		f.add(c);
+		f.setSize(400,400);
+		f.setLayout(null);
+		f.setVisible(true);
+
+	}
+
+}
