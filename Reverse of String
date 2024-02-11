@@ -1,0 +1,18 @@
+public class ReverseString {
+
+	public static void main(String[] args) {
+		String input="Hello jismi";
+		String REVERSE="";
+		for(int i=input.length()-1;i>=0;i--) {
+			REVERSE=REVERSE+input.charAt(i);{
+				
+			}
+		}
+		System.out.println("The original string is"+input);
+		System.out.println("The reversed string is"+REVERSE);
+
+	}
+	}
+OUTPUT:
+The original string isHello jismi
+The reversed string isimsij olleH
