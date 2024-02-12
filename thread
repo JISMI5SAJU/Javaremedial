@@ -1,0 +1,29 @@
+package wonder;
+
+public class t {
+
+	public static void main(String[] args) {
+		multi m1=new multi();
+		m1.start();
+
+	}
+
+}
+class multi extends Thread{
+	public void run() {
+		for(int i=1;i<=10;i++) {
+			System.out.println(2+"*"+i+"="+2*i+"\t");
+		}
+	}
+}
+OUTPUT:
+2*1=2	
+2*2=4	
+2*3=6	
+2*4=8	
+2*5=10	
+2*6=12	
+2*7=14	
+2*8=16	
+2*9=18	
+2*10=20	
